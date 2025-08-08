@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_notice.css">
+    <title>소식페이지</title>
+</head>
+<body>
+    <header>
+        <!-- 상단 로고 및 간편기능, 메뉴-->
+        <div id="main_logo">
+            <a href="./index.html"><img  style="margin-top: 10px;" src="./images/main_logo.png" alt="logo"></a>
+        </div>
+        <div id="main_menu">
+            <div id="sub_logo">
+                <span><a href="" style="font-size: 16px; padding-top: 5px;">더본코리아 | </a></span>
+                <img src="./images/facebook_icon.png">
+                <img src="./images/instagram_icon.png">
+            </div>
+        
+            <!-- 메뉴구성 -->
+                <ul id="sub_menu">
+                    <li><a href="#">빽다방</a>
+                        <ul class="sub_list">
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">빽다방 소개</a></li>
+                            <li><a href="#">멥버십 / 앱 소개</a></li>
+                            <li><a href="#">커피 이야기</a></li>
+                            <li><a href="#">교육 이야기</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="./sub_menu.html" target="_self">메뉴</a>
+                        <ul class="sub_list">
+                            <li><a href="#">신메뉴</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">아이스크림 / 디저트</a></li>
+                            <li><a href="#">빽스치노</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_notice.html">소식</a>
+                        <ul class="sub_list">
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">매장안내</a>
+                       <ul class="sub_list">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">창업안내</a>
+                        <ul class="sub_list">
+                            <li><a href="#">왜 빽다방인가요?</a></li>
+                            <li><a href="#">창업상담 신청</a></li>
+                            <li><a href="#">창업절차 및 조건</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_customer.html" target="_blank">고객의 소리</a>
+                    
+                    </li>
+                </ul>
+        </div>
+    </header>
+    <div id="fixed_padding"></div>
+    <div id="back">
+        <div class="overlay">
+            <h1>소식</h1>
+            <hr>
+            <p style="font-size: 20px;">다양한 이벤트와 새로운 소식을 확인하세요!</p>
+        </div>
+        <!-- 메뉴 구성 -->
+        <table class="banner-table">
+            <tr>
+                <th><a href="">전체보기</a></th>
+                <th><a href="">소식</a></th>
+                <th><a href="">이벤트</a></th>
+            </tr>
+        </table>
+    </div>
+    
+     <!-- 테이블 -->
+     <table id="notice_table">
+        <thead>
+            <tr><th style="width: 100px">번호</th><th style="width: 100px">분류</th><th style="width: 800px;">제목</th><th>등록일</th><th>조회수</th></tr>
+        </thead>
+        <tbody>
+             <tr><td>50</td><td>이벤트</td><td>카파라떼(ICED)를 3일 간 1천원에 만나보세요!</td><td>2025-06-04</td><td>10322</td></tr>
+             <tr><td>49</td><td>이벤트</td><td>CHILL SUMMER DRINK, 신메뉴 5종</td><td>2025-05-29</td><td>26604</td></tr>
+             <tr><td>48</td><td>이벤트</td><td>아샷추(아이스티 샷 추가) 1천원 할인 이벤트</td><td>2025-05-27</td><td>50560</td></tr>
+             <tr><td>47</td><td>이벤트</td><td>[빽다방X립톤] 립톤 아이스티 마시고 런던으로 떠나자</td><td>2025-05-21</td><td>31603</td></tr>
+             <tr><td>46</td><td>소식</td><td>열대과일의 시원함이 가득한 여름, 망고&파인애플</td><td>2025-04-29</td><td>2565</td></tr>
+             <tr><td>45</td><td>소식</td><td>상큼한 체리빛 봄, 체리주스</td><td>2025-04-09</td><td>1664</td></tr>
+             <tr><td>44</td><td>소식</td><td>끌거 헤이즐럿으로 달콤쌉쌀하게 즐기는 커피</td><td>2025-03-27</td><td>1820</td></tr>
+             <tr><td>43</td><td>소식</td><td>요거트 아이스크림 판매매장</td><td>2025-03-19</td><td>42124</td></tr>
+        </tbody>
+     </table>
+    
+     <!-- 하단 구성 -->
+    <div id="footer">
+        <hr class="bottom">
+         <select>
+             <option selected disabled hidden>패밀리사이트 바로가기</option>
+             <option>새마을식당</option>
+             <option>역전우동</option>
+             <option>미정국수</option>
+             <option>원조쌈밥집</option>
+         </select>
+         <footer>
+                 <img  style="width: 200px; padding-left: 400px;" src="./images/flogo.png" alt="f_logo" >
+                 <pre id="f_info">
+                     <b style="background-color: pink;">개인정보처리방침</b>
+                     (주)더본코리아 | 사업자등록번호 211-86-00870 | 대표이사 백종원
+                     주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 | 팩스: 02-511-3864
+                     본사 대표전화: 02-549-3864 | 가맹상담전화: 02-3447-0410 | 고객센터: 1544-2360
+                 </pre>
+             
+                 <blockquote>
+                     COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+                 </blockquote>
+         </footer>
+    </div>
+    
+</body>
+</html>

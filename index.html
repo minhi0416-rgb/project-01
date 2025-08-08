@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>메인페이지</title>
+    <style>
+        /* 스와이퍼 */
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <!-- 상단 로고 및 간편기능, 메뉴-->
+        <div id="main_logo">
+            <img  style="margin-top: 10px;" src="./images/main_logo.png" alt="logo">
+        </div>
+        <div id="main_menu">
+            <div id="sub_logo">
+                <span><a href="" style="font-size: 16px; padding-top: 5px;">더본코리아 | </a></span>
+                <img src="./images/facebook_icon.png">
+                <img src="./images/instagram_icon.png">
+            </div>        
+            <!-- 메뉴구성 -->
+                <ul id="sub_menu">
+                    <li><a href="#">빽다방</a>
+                        <ul class="sub_list">
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">빽다방 소개</a></li>
+                            <li><a href="#">멥버십 / 앱 소개</a></li>
+                            <li><a href="#">커피 이야기</a></li>
+                            <li><a href="#">교육 이야기</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="./sub_menu.html" target="_self">메뉴</a>
+                        <ul class="sub_list">
+                            <li><a href="#">신메뉴</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">아이스크림 / 디저트</a></li>
+                            <li><a href="#">빽스치노</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_notice.html">소식</a>
+                        <ul class="sub_list">
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">매장안내</a>
+                       <ul class="sub_list">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">창업안내</a>
+                        <ul class="sub_list">
+                            <li><a href="#">왜 빽다방인가요?</a></li>
+                            <li><a href="#">창업상담 신청</a></li>
+                            <li><a href="#">창업절차 및 조건</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_customer.html" target="_blank">고객의 소리</a>
+                    
+                    </li>
+                </ul>
+        </div>
+     </header>
+
+     <!-- 메인베너 -->
+     <img id="fixed_channel" src="./images/ico_channel_h.png" alt="">
+     <section>
+     </section>
+     <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" 
+                       space-between="30" centered-slides="true" autoplay-delay="2500" 
+                       autoplay-disable-on-interaction="false">
+        <swiper-slide><img src="./images/main_slide-01.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/main_slide-02.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/main_slide-03.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/main_slide-04.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/main_slide-05.jpg" alt=""></swiper-slide>
+      </swiper-container>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+     <main class="image-container">
+        <img src="./images/main_sec2.jpg" alt="" class="main-image">
+        <div class="icon-wrapper">
+            <img src="./images/view_icon.png" alt="" class="icon-base"> 
+            <img src="./images/btn1-on.png" alt="" class="icon-hover">
+        </div>
+     </main>
+    
+    <!-- 화면 중앙 베너들 -->
+    <div class="wrap_01">
+        <img src="./images/main_sec1.jpg" alt="">
+        <h1 style="color:rgb(12, 12, 133);">PAIK'S COFFEE<br>STORY</h1>
+        <p>균형잡힌 바디감으로 긴 여운을 남기는 빽다방 커피를 만나보세요</p>
+        <div class="icon-wrapper2">
+            <img src="./images/view_icon.png" alt="" class="icon-base"> 
+            <img src="./images/btn1-on.png" alt="" class="icon-hover">
+        </div>
+    </div>
+    <div class="wrap_01">
+        <img src="./images/main_intro_bn.jpg" alt="">
+        <h1 style="color:white">PAIK'S BRAND<br>STORY</h1>
+        <p style="color: white;">합리적인 가격으로 만나는 맛있고 든든한 빽다방</p>
+        <div class="icon-wrapper2">
+            <img src="./images/view_icon.png" alt="" class="icon-base"> 
+            <img src="./images/btn1-on.png" alt="" class="icon-hover">
+        </div>
+    </div>
+
+    <div class="sec_03">
+         <img src="./images/main_sec3.jpg" alt="">
+         <img src="./images/main_sec4.jpg" alt="">
+    </div>
+    
+    <div class="sec_final">
+         <div class="text_banner">
+            <img src="./images/store.PNG" alt="" style="width: 560px;">
+            <div id="wrap">
+                <div class="box">
+                    <h2>FRANCHISE</h2>
+                    <P>빽다방 창업안내를 도와드리겠습니다.</P>
+                </div>
+                <img class="store" src="./images/store-ico.png" alt="">
+                <img class="main_sec6" src="./images/main_sec6.png" alt="">
+            </div>
+         </div>
+         <img style="height: 620px; width:750px" src="./images/main_sec5.jpg" alt="">
+     </div>
+    
+     <!-- 하단 구성 -->
+    <div id="footer">
+        <hr class="bottom">
+         <select>
+             <option selected disabled hidden>패밀리사이트 바로가기</option>
+             <option>새마을식당</option>
+             <option>역전우동</option>
+             <option>미정국수</option>
+             <option>원조쌈밥집</option>
+         </select>
+         <footer>
+                 <img  style="width: 200px; padding-left: 400px;" src="./images/flogo.png" alt="f_logo" >
+                 <pre id="f_info">
+                     <b style="background-color: pink;">개인정보처리방침</b>
+                     (주)더본코리아 | 사업자등록번호 211-86-00870 | 대표이사 백종원
+                     주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 | 팩스: 02-511-3864
+                     본사 대표전화: 02-549-3864 | 가맹상담전화: 02-3447-0410 | 고객센터: 1544-2360
+                 </pre>
+             
+                 <blockquote>
+                     COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+                 </blockquote>
+         </footer>
+    </div>
+    
+</body>
+</html>

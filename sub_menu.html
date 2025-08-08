@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_menu.css">
+    <title>메뉴페이지</title>
+    <style>
+       /* 이미지 갤러리 */
+        .menu_gallery{
+            text-align: center;
+            width: 1440px;
+        }
+        .gallery{
+            display: flex;
+            margin-left: 250px;
+        }
+        figure{
+            width:250px; height: 350;
+        }
+        figure img{
+            width: 100%;
+        }
+        .bottom-logo{
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            margin: 50px 0px;
+        }
+        .bottom-logo img{
+            width:30px;
+        }
+    </style>
+
+</head>
+<body>
+     <header>
+        <!-- 상단 로고 및 간편기능, 메뉴-->
+        <div id="main_logo">
+            <a href="./index.html"><img  style="margin-top: 10px;" src="./images/main_logo.png" alt="logo"></a>
+        </div>
+        <div id="main_menu">
+            <div id="sub_logo">
+                <span><a href="" style="font-size: 16px; padding-top: 5px;">더본코리아 | </a></span>
+                <img src="./images/facebook_icon.png">
+                <img src="./images/instagram_icon.png">
+            </div>
+        
+            <!-- 메뉴구성 -->
+                <ul id="sub_menu">
+                    <li><a href="#">빽다방</a>
+                        <ul class="sub_list">
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">빽다방 소개</a></li>
+                            <li><a href="#">멥버십 / 앱 소개</a></li>
+                            <li><a href="#">커피 이야기</a></li>
+                            <li><a href="#">교육 이야기</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="./sub_menu.html" target="_self">메뉴</a>
+                        <ul class="sub_list">
+                            <li><a href="#">신메뉴</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">아이스크림 / 디저트</a></li>
+                            <li><a href="#">빽스치노</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_notice.html">소식</a>
+                        <ul class="sub_list">
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">매장안내</a>
+                       <ul class="sub_list">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">창업안내</a>
+                        <ul class="sub_list">
+                            <li><a href="#">왜 빽다방인가요?</a></li>
+                            <li><a href="#">창업상담 신청</a></li>
+                            <li><a href="#">창업절차 및 조건</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub_customer.html" target="_blank">고객의 소리</a>
+                    
+                    </li>
+                </ul>
+        </div>
+     </header>
+
+    <!-- 서브베너 -->
+    <div id="banner">
+        <img  src="./images/bg-menu.jpg" alt="sub_banner">    
+        <!-- 오버레이 -->
+        <div class="overlay">
+            <h1>신 메 뉴</h1>
+            <hr>
+            <p>지금 바로 가까운 매장에서 빽다방 신메뉴를 만나 보실 수 있습니다.</p>
+        </div>
+        <!-- 메뉴 구성 -->
+        <table>
+            <tr>
+                <th><a href="">신메뉴</a></th>
+                <th><a href="">커피</a></th>
+                <th><a href="">음료</a></th>
+                <th><a href="">아이스크림/디저트</a></th>
+                <th><a href="">빽스치노</a></th>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- 메뉴 갤러리 -->
+    
+    <div class="menu_gallery">
+        <h1 style="color:rgb(19, 8, 116);">신메뉴</h1>
+        <hr style="width:100px; border: 1px solid rgb(19, 8, 116);">
+        <div class="gallery">
+            <figure>
+                <img src="./images/써니호오션스무디-450x588.png" alt="">
+                <figcaption>써니호 오션 스무디</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/고무고무깔라만시스무디-450x588.png" alt="">
+                <figcaption>고무고무 깔라만시 스무디</figcaption>
+            </figure>     
+        </div>
+    </div>
+    
+    <div class="bottom-logo">
+        <img src="./images/facebook-ico.png" alt="">
+        <img src="./images/insta-ico.png" alt="">
+    </div>
+     <!-- 하단 구성 -->
+    <div id="footer">
+        <hr class="bottom">
+         <select>
+             <option selected disabled hidden>패밀리사이트 바로가기</option>
+             <option>새마을식당</option>
+             <option>역전우동</option>
+             <option>미정국수</option>
+             <option>원조쌈밥집</option>
+         </select>
+         <footer>
+                 <img  style="width: 200px; padding-left: 400px;" src="./images/flogo.png" alt="f_logo" >
+                 <pre id="f_info">
+                     <b style="background-color: pink;">개인정보처리방침</b>
+                     (주)더본코리아 | 사업자등록번호 211-86-00870 | 대표이사 백종원
+                     주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 | 팩스: 02-511-3864
+                     본사 대표전화: 02-549-3864 | 가맹상담전화: 02-3447-0410 | 고객센터: 1544-2360
+                 </pre>
+             
+                 <blockquote>
+                     COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+                 </blockquote>
+         </footer>
+    </div>
+    
+</body>
+</html>

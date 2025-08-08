@@ -1,0 +1,105 @@
+html{
+    background-color: bisque;
+}
+body{
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+    width:1440px;
+}
+/* 태그 공통 서식 */
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* 헤더 */
+header {
+    width: 1440px;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 20px;
+    z-index: 50;
+}
+#sub_logo {
+    text-align: right;
+}
+#sub_logo img {
+    width: 30px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+ /* 서브 메뉴 관련 */
+#sub_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    height: 50px;
+}
+#sub_menu > li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 10px;
+    position: relative;
+}
+#sub_menu > li > a{
+    font-size: 20px;
+}
+#sub_menu > li:hover{
+    height: 100px;
+}
+#sub_menu > li:hover .sub_list {
+    display: block; 
+    background-color: white;
+    }
+.sub_list {
+    list-style: none; padding:0;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    background-color: transparent; 
+    z-index:10;
+}
+/* 메인베너 및 fixed 채널*/
+section{ padding-top:120px; }
+section img{
+    width:100%;
+}
+#fixed_channel{
+    position: fixed;
+    top:200px;
+    right:300px;
+    z-index:100;
+}
+/* 푸터 */
+#footer {
+    width: 1440px;
+    background-color: white;
+}
+.bottom {
+    border: 3px solid rgb(238, 238, 7);
+}
+footer {
+    text-align: center;
+}
+.f_info {
+    margin-top: 20px;
+}
+select {
+    float: right;
+    margin-right: 200px;
+}

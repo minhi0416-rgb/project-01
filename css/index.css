@@ -1,0 +1,126 @@
+/* 폰트 */
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+}
+h1, h2 {
+    font-family: 'SBAggroB';
+}
+/* wrap_01 - 이미지 확대 효과 포함 */
+.wrap_01 {
+    width: 50%;
+    height: 300px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.wrap_01 img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+.wrap_01 img:hover {
+    transform: scale(1.05);
+}
+.wrap_01 h1 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.wrap_01 p {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+/* 이미지 배치 */
+.sec_03 {
+    width: 100%;
+    overflow: hidden;
+}
+.sec_03 img {
+    width: 50%;
+    height: 500px;
+    float: left;
+    transition: transform 0.4s linear;
+}
+.sec_03 img:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+/* 마지막 섹션 */
+.sec_final {
+    clear: both;
+    margin-left: 130px;
+    display: flex;
+}
+.text_banner img {
+    display: block;
+}
+#wrap {
+    position: relative;
+    width: 550px;
+}
+.box {
+    width: 500px;
+    height: 300px;
+    border: 4px solid rgb(12, 12, 133);
+    padding-left: 50px;
+}
+.store {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+}
+.main_sec6 {
+    width: 250px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+/* 이미지 중복배치 및 호버 아이콘 */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+}
+.main-image {
+    width: 100%;
+    display: block;
+}
+.icon-wrapper,
+.icon-wrapper2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+}
+.icon-wrapper2 img{
+    width: 100%; height: 100%;
+}
+.icon-base{
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.8;
+}
+.icon-base,
+.icon-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.icon-hover {
+    opacity: 0;
+    z-index: 2;
+}
+.icon-wrapper:hover .icon-hover,
+.icon-wrapper2:hover .icon-hover {
+    opacity: 1;
+    animation: spin 0.5s linear;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
